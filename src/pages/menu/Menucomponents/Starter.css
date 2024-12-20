@@ -1,0 +1,129 @@
+/* Base styles for the starter menu */
+.starter-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px;
+}
+
+/* Image container stays on the left */
+.image-container {
+  flex: 1;
+  max-width: 100%;
+}
+
+.food-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Menu container */
+.menu-element {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+/* Title and Coffee Image */
+.starter-text {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coffee {
+  width: 40px;
+  height: 40px;
+}
+
+/* Menu list styles */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.menu-details {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.items-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 5px 0;
+}
+
+.menu-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: orange;
+  white-space: nowrap;
+}
+
+/* Responsive layout for small devices */
+@media screen and (max-width: 768px) {
+  .starter-menu {
+    flex-direction: column;
+  }
+
+  .image-container, .menu-element {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-item {
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .menu-details {
+    margin-bottom: 10px;
+  }
+
+  .menu-price {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .food-image {
+    margin-bottom: 20px;
+  }
+
+  .starter-text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px)
+{
+  .starter-text{
+    font-size: 20px;
+    text-align: center;
+  }
+}
