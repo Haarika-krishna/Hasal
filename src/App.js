@@ -6,7 +6,7 @@ import Home from './pages/home/Home';
 import Menu from './pages/menu/Menu';
 import Blog from './pages/blog/Blog';
 import Pages from './pages/page/Page';
-import BlogDetails from './pages/blogDetails/Blogdetails';
+import BlogDetails from './pages/BlogDetails/Blogdetails'
 import Shop from './pages/shop/Shop';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
