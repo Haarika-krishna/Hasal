@@ -1,0 +1,122 @@
+/* Base styles for the dessert menu */
+.starter-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px;
+}
+
+/* Image container stays on the left */
+.image-containe {
+  flex: 1;
+  max-width: 100%;
+  justify-content: center;
+    display: flex;
+}
+
+.dessert-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Menu container */
+.dessert-element {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+/* Title and Coffee Image */
+.dessert-text1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coffee1 {
+  width: 40px;
+  height: 40px;
+}
+
+/* Menu list styles */
+.dessert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dessert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.dessert-details {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.dessert-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.items-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 5px 0;
+}
+
+.dessert-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: orange;
+  white-space: nowrap;
+}
+
+/* Responsive layout for small devices */
+@media (max-width: 768px) {
+  .starter-menu-container {
+    flex-direction: column;
+  }
+
+  .image-containe, .dessert-element {
+    width: 100%;
+  }
+
+  .dessert-item {
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .dessert-details {
+    margin-bottom: 10px;
+  }
+
+  .dessert-price {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .dessert-image {
+    margin-bottom: 20px;
+  }
+
+  .dessert-text1 {
+    text-align: center;
+  }
+}
